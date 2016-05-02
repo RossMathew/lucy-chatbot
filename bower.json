@@ -1,0 +1,26 @@
+{
+  "name": "lucy",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ravi RT Merugu <rrmerugu@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.5.0",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "animateCSS": "~1.2.1",
+    "font-awesome": "^4.5.0",
+    "angular-cookies": "^1.5.5"
+  }
+}

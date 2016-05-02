@@ -1,0 +1,58 @@
+/*
+For more SASS functions
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+http://sass-lang.com/guide
+http://webdesign.tutsplus.com/tutorials/how-to-use-sass-to-build-one-project-with-multiple-themes--cms-22104
+*/
+
+// $theme-color :  rgba(55, 90, 127, 1); // dark blue
+//$theme-color : rgba(209, 160, 84,1); //dark gold
+// $theme-color : rgba(235, 110, 48, 1); //orange
+// $theme-color : rgba(56, 89, 85,1); // dark green
+// $theme-color : rgba(253, 225, 66, 1); // light yellow
+//$theme-color : rgba(216, 104, 56,1); // dark orange
+// $theme-color : rgba(122, 169, 60,1); // light green
+// $theme-color: rgba(19, 128, 184,1); // some medium blue
+
+
+//$theme-color: rgba(217, 167, 1,1); // dark yellow
+//$theme-color: rgba(69, 64, 125, 1); // dark violet
+//$theme-color: rgba(120,144,179,1);
+
+$theme-color: #3A59A7;
+//$theme-color:  rgba(222, 209, 99,1); // light yellow
+
+// $theme-color : rgba(255, 165, 0,1);
+$white : white; // rgba(255, 255, 255, 1);
+
+/*
+Each color will have 4 forms
+1. Original
+2. Light
+3. Lighter
+4. Lightest
+*/
+$primary-color : $theme-color ;
+$primary-color-light : lighten($theme-color, 5%);
+$primary-color-lighter : lighten($theme-color, 10%);
+$primary-color-lightest : lighten($theme-color, 15%) ;
+$primary-color-lightest-50 : lighten($theme-color,  50%) ;
+
+$lightestgray : rgba(0,0,0,0.1);// #efefef;
+$lightergray : #ddd;
+
+// 1 is darker and 0 is lighter
+$black-01 : rgba(0, 0, 0, 1);
+$black-09 : rgba(0, 0, 0, 0.9);
+$black-08 : rgba(0, 0, 0, 0.8);
+$black-07 : rgba(0, 0, 0, 0.7);
+$black-06 : rgba(0, 0, 0, 0.6);
+$black-05 : rgba(0, 0, 0, 0.5);
+$black-04 : rgba(0, 0, 0, 0.4);
+$black-02 : rgba(0, 0, 0, 0.2);
+$black-01 : rgba(0, 0, 0, 0.1);
+
+
+
+$text-color : #444;
+$heading-color: #333;

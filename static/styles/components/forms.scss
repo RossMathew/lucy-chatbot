@@ -1,0 +1,53 @@
+.dynamic-form{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #efefef;
+  padding: 15px 10px;
+
+
+
+input{
+  background: rgb(252, 252, 252) none repeat scroll 0% 0%;
+border: none;
+border-bottom: 3px solid #C5C5C5 !important;
+
+border-image: none;
+padding: 15px 10px 4px !important;
+font-size: 20px;
+font-weight: bold;
+}
+
+input, textarea {
+  padding: 5px 10px;
+width: 100%;
+margin-bottom: 10px;
+
+border-color: #efefef;
+
+}
+.form-group{
+
+  margin: 0 !important;
+}
+
+a.delete-row{
+  padding: 8px 13px;
+  background: red;
+  color: white;
+  border-radius: 2px;
+  text-transform: capitalize;
+  margin-top: 5px;
+  float: right;
+}
+
+
+
+}
+
+a.add-row{
+  background: green;
+color: white;
+padding: 8px 13px;
+border-radius: 2px;
+float: right;
+}

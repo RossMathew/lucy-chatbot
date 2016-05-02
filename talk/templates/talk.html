@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}{{title}} {% endblock %}
+
+{% block content %}
+
+
+<section class="talk-page" ng-controller="lucyTalk">
+<div class="talk-banner  height-hero-1 ">
+	<div class="container ">
+		<div class="clearfix m-t-50"></div>
+		<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+            <form ng-submit="letsTalk()" ng-cloak>
+			<div class="input-group search-input">
+              <input type="text" class="form-control input-lg" ng-model="word" autofocus placeholder="Say Hi!">
+              <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="letsTalk()" type="button"><i class="fa fa-2x fa-search"></i></button>
+              </span>
+            </div>
+           </form>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="talk-status " ng-class="{'ok': thedata.aware, 'notok': !thedata.aware, }"></div>
+                </div>
+                <div class="col-xs-10">
+                 <small class="pull-right"><a href="/blog/announcing-lucy-talk" class="know-how">Know how to train your Dragon !</a></small>
+                </div>
+            </div>
+
+		</div>
+            <div class="col-md-12 text-center">
+                <h1>[[thedata.answer]]</h1>
+
+
+                <div class="clearfix" style="margin-bottom:120px;"></div>
+            </div>
+
+
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+{% endblock %}

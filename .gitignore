@@ -1,0 +1,15 @@
+bin/
+include/
+lib/
+.Python
+pip-selfcheck.json
+.idea/
+*.pyc
+logs/
+*migrations/
+bower_components/
+share/
+node_modules/
+.sass-cache/
+venv/
+db.sqlite3

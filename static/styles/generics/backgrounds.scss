@@ -1,0 +1,10 @@
+@import "colorPallete";
+
+.bg-primary-color{
+    background: $primary-color;
+    color: white;
+}
+.bg-primary-color-lighter {
+  background: $primary-color-light;
+  color: white;
+}

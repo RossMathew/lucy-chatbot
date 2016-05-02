@@ -1,0 +1,50 @@
+/*
+
+rsquarelabs.com/org/xyz
+Ravi RT Merugu
+rrmerugu@gmail.com
+
+*/
+@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+// normalisers
+@import "generics/colorPallete";
+@import "generics/normaliseBootstrap";
+@import "generics/fontStyles";
+@import "generics/buttons";
+@import "generics/colors";
+@import "generics/marpads";
+@import "generics/borders";
+@import "generics/backgrounds.scss";
+
+
+// pages
+@import "components/homepage";
+@import "components/subscribe";
+@import "components/common";
+@import "components/about";
+@import "components/ailabs";
+@import "components/contact";
+@import "components/login";
+@import "components/main";
+@import "components/profile";
+@import "components/faqs";
+@import "components/web";
+@import "components/dashboard";
+@import "components/welcome-page";
+@import "components/blog";
+@import "components/ckeditor";
+@import "components/help";
+@import "components/product";
+@import "components/support";
+@import "components/opensource";
+@import "components/tutorials";
+@import "components/projects";
+@import "components/notifications";
+@import "components/messages";
+@import "components/assistant";
+@import "components/talk";
+@import "components/user";
+@import "components/notes";
+@import "components/contextmenu";
+@import "components/forms";

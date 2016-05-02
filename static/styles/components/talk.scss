@@ -1,0 +1,59 @@
+
+.talk-page{
+      height: 83%;
+        background-color:  $primary-color;
+}
+.talk-banner{
+
+      input.form-control.input-lg {
+      background: transparent;
+      border-color: #8F9BBB;
+      color: white;
+          line-height: 65px;
+      height: 65px;
+          font-size: 40px;
+      font-weight: 300;
+  }
+  .search-input{
+      margin-top: 100px;
+      }
+
+
+      .search-input .btn{
+      padding: 13px 18px;
+      margin-top:0px;
+      background: rgba(47, 89, 193, 0.24);
+      line-height: 65px;
+      border-color: #8F9BBB;
+      height: 65px;
+      }
+      .search-input i{
+      color: #8F9BBB;
+      position: relative;
+      top: -8px;
+      }
+
+      a.know-how{
+
+      color: #efefef;
+      }
+      .know-how:hover{
+      color: white;
+      }
+      .talk-status{
+          height: 10px;
+          width: 10px;
+          background: #efefef;
+          border-radius: 50%;
+      }
+      .talk-status.ok{
+      background: green !important;
+      }
+      .talk-status.notok{
+      background: red !important;
+      }
+
+
+
+
+}

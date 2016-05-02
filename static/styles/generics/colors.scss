@@ -1,0 +1,20 @@
+// contains the font colors and background colors
+@import "colorPallete";
+
+.white {
+  color : $white !important;
+}
+
+.black-05 {
+  color :$black-05 !important;
+}
+.black-02{
+  color :$black-02 !important;
+}
+.black-07{
+  color :$black-07 !important;
+}
+
+.link {
+  color: $primary-color !important;
+}

@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "includes/head.html" %}
+</head>
+  <body ng-app="rsquareApp" class="ng-cloak">
+	{% include "includes/header.html" %}
+
+	{% block content %}{% endblock %}
+
+
+	{% include "includes/footer.html" %}
+
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+  <script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'bower_components/angular/angular.min.js' %}"></script>
+
+
+
+    <script type="text/javascript">
+      angular.module('rsquareApp', []).constant("DJANGO_CSRF_CONSTANT",  '{{ csrf_token }}' );
+      angular.module('rsquareApp').constant("API_URL", "{{ settings.API_URL }}");
+			
+			// override the angular print function
+			angular.module('rsquareApp').config(['$interpolateProvider', function($interpolateProvider) {
+			    $interpolateProvider.startSymbol('[[');
+			    $interpolateProvider.endSymbol(']]');
+			}])
+
+    </script>
+
+    <script src="{% static 'js/rsquare.js'%}"></script>
+    <script src="{% static 'js/lucy-talk.js'%}"></script>
+
+  </body>
+</html>
