@@ -14,7 +14,7 @@ class Question(models.Model):
     text = models.CharField(max_length=1000)
     date = models.DateTimeField(default=timezone.now())
     updated = models.DateTimeField(default=timezone.now())
-    answer = models.ManyToManyField('Answer', related_name='questions', blank=True, null=True)
+    answers = models.ManyToManyField('Answer', related_name='questions', blank=True, null=True)
     author = models.ForeignKey(MyUser)
 
     def __unicode__(self):
@@ -32,7 +32,7 @@ class Answer(models.Model):
     date = models.DateTimeField(default=timezone.now())
     updated = models.DateTimeField(default=timezone.now())
     author = models.ForeignKey(MyUser, null=True)
-    question = models.ManyToManyField(Question, related_name='answers')
+    # question = models.ManyToManyField(Question, related_name='answers')
 
     def __unicode__(self):
         return self.text

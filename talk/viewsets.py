@@ -67,6 +67,7 @@ class QuestionViewList(generics.GenericAPIView):
         logger.debug(queryset)
         if queryset.count() >= 1:
             # Now take the first entry - assuming thats most relevant
+            logger.debug(queryset.first())
             answers = queryset[0].answers
             logger.debug(answers.count())
             answers_count = answers.count()
