@@ -9,6 +9,8 @@ Consider the Lucy as a baby, and all forms of intelligence must be taught to it,
 
 ![lucy action ](docs/images/action.png)
 
+![lucy action ](docs/images/404.png)
+
 
 # Installation
 
@@ -29,11 +31,13 @@ python manage.py runserver
 
 Teaching the lucy is via the admin portal http://localhost:8000/admin/
 
-#### 1. create the superuser with command `python manage.py createsuperuser`
+## 1. create the superuser with command `python manage.py createsuperuser`
 ![lucy action ](docs/images/terminal.png)
 
-#### 2. login via http://localhost:8000/admin/
+## 2. login via http://localhost:8000/admin/
 ![lucy action ](docs/images/login.png)
 
-#### 3. add a question and answers via http://localhost:8000/admin/talk/question/add/
+## 3. add a question and answers via http://localhost:8000/admin/talk/question/add/
+Add a question and any question can have multiple answers and vice versa, an answer can have multiple questions
+
 ![lucy action ](docs/images/add-question.png)
