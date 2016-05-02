@@ -18,7 +18,7 @@ angular.module('rsquareApp').controller('lucyTalk', function($scope, $http, API_
         console.log("letsTalk triggered");
         $http({
             method: 'GET',
-            url: API_URL+'/restful/get-answer/?text_has='+$scope.word,
+            url: API_URL+'/get-answer/?text_has='+$scope.word,
         }).then(function successCallback(response) {
             console.log(response);
             $scope.thedata =  response.data;
