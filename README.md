@@ -27,12 +27,13 @@ python manage.py runserver
 
 # How to teach Lucy
 
-Teaching the lucy is via the admin portal http://localhost:8000/admin/ . Create a superuser with command `python manage.py createsuperuser`
+Teaching the lucy is via the admin portal http://localhost:8000/admin/
 
-1. login via http://localhost:8000/admin/
+#### 1. create the superuser with command `python manage.py createsuperuser`
+![lucy action ](docs/images/terminal.png)
 
+#### 2. login via http://localhost:8000/admin/
 ![lucy action ](docs/images/login.png)
 
-2. add a question and answers via http://localhost:8000/admin/talk/question/add/
-
+#### 3. add a question and answers via http://localhost:8000/admin/talk/question/add/
 ![lucy action ](docs/images/add-question.png)
